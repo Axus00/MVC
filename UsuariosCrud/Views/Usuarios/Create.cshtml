@@ -1,0 +1,58 @@
+@{
+    ViewBag.Title = "Crear usuario";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear usuario</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="links">
+            <a asp-controller="Dashboard" asp-action="Index">Inicio</a>
+            <a asp-controller="Usuarios" asp-action="Index">Gestión de usuarios</a>
+        </div>
+
+        <div class="container">
+            <div class="title">
+                <h1>Registro crear usuario</h1>
+            </div>
+            <div class="col-md-12">
+                <div class="form-control">
+                    <div class="mb-3">
+                        <label for="text"><strong>Nombres</strong></label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <label for="text"><strong>Apellidos</strong></label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <label for="text"><strong>Correo</strong></label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <label for="text"><strong>Género</strong></label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <label for="text"><strong>Edad</strong></label>
+                        <input class="form-control" type="text">
+                    </div>
+
+                    <button class="btnCrearUsuario btn" asp-controller="Usuarios" asp-action="Create">Crear nuevo
+                        usuario</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

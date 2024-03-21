@@ -1,0 +1,55 @@
+@{
+  ViewBag.Title = "Usuarios";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listado de usuarios</title>
+</head>
+
+<body>
+  <div class="main">
+
+    <div class="links">
+      <a asp-controller="Dashboard" asp-action="Index">Inicio</a>
+      <a asp-controller="Usuarios" asp-action="Index">Gestión de usuarios</a>
+    </div>
+
+    <div class="table">
+      <div class="button">
+        <a class="btnCrear btn" asp-controller="Usuarios" asp-action="Create">Crear nuevo usuario</a>
+      </div>
+      <table class="table text-center">
+        <thead>
+          <th>Nombres</th>
+          <th>Apellidos</th>
+          <th>Correo</th>
+          <th>Género</th>
+          <th>Edad</th>
+          <th>Acciones</th>
+        </thead>
+        <tbody>
+          <td>Robinson</td>
+          <td>Cortés</td>
+          <td>robinson@riwi.io</td>
+          <td>M</td>
+          <td>28</td>
+          <td>
+            <a class="btnEliminar btn " asp-controller="Usuarios" asp-action="Delete">Eliminar</a>
+            <a class="btnEditar btn" asp-controller="Usuarios" asp-action="Update">Editar</a>
+            <a class="btnDetalles btn" asp-controller="Usuarios" asp-action="Show">Detalles</a>
+          </td>
+        </tbody>
+      </table>
+    </div>
+
+
+  </div>
+</body>
+
+</html>

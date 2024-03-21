@@ -1,0 +1,52 @@
+@{
+    ViewBag.Title = "Detalles usuario";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles usuarios</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="links">
+            <a asp-controller="Dashboard" asp-action="Index">Inicio</a>
+            <a asp-controller="Usuarios" asp-action="Index">Gestión de usuarios</a>
+        </div>
+
+        <div class="title">
+            <h1>Detalles del usuario</h1>
+        </div>
+
+
+
+
+        <table class="table mt-4">
+            <thead>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Edad</th>
+                <th>Correo</th>
+                <th>Género</th>
+            </thead>
+            <tbody>
+                <td>Test nombre</td>
+                <td>Test Apellido</td>
+                <td>Test edad</td>
+                <td>correo@correo.com</td>
+                <td>M</td>
+            </tbody>
+        </table>
+
+        <div class="boton-volver">
+            <button class=" btn btn-dark"><a asp-controller="Usuarios" asp-action="Index">Ver lista usuarios</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

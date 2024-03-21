@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    width: 100%;
+    border-radius: 10px;
+    background-color: black;
+    
+    h1 {
+        color: white;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+.links {
+    position: relative;
+
+    a {
+        color: black;
+        margin-bottom: 50px;
+    }
+}
+
+.boton-volver a {
+    color: white;
+    text-decoration: none;
+
+    
+}
+
+.boton-volver button:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5);
+    transition: 0.5s;
+}

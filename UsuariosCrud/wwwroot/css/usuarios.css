@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+}
+
+.links {
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+  margin-right: 25px;
+  gap: 25px;
+
+  
+}
+
+.btnEliminar{
+  color: white;
+  background-color: black;
+
+  
+}
+
+.btnEliminar:hover{
+  color: black;
+  background-color: transparent;
+  box-shadow: 0 0 10px 5px rgba(255, 0, 0, 1);
+  transition: 0.5s;
+}
+
+.btnEditar{
+  color: white;
+  background-color: black;
+}
+
+.btnEditar:hover{
+  color: black;
+  background-color: transparent;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 255, 1);
+  transition: 0.5s;
+}
+
+.btnDetalles{
+  color: white;
+  background-color: black;
+}
+
+.btnDetalles:hover{
+  color: black;
+  background-color: transparent;
+  box-shadow: 0 0 10px 5px rgba(0, 255, 0, 1);
+  transition: 0.5s;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+}
+.links a:hover {
+  color: green;
+  transition: 0.5 ;
+}
+
+.button {
+  margin-bottom: 25px;
+}
+
+.btnCrear{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btnCrear:hover{
+  color: white;
+  box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5);
+  transition: 0.5s;
+}
+

@@ -1,0 +1,58 @@
+@{
+    ViewBag.Title = "Actualizar usuario";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear usuario</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="links">
+            <a asp-controller="Dashboard" asp-action="Index">Inicio</a>
+            <a asp-controller="Usuarios" asp-action="Index">Gestión de usuarios</a>
+        </div>
+
+        <div class="container">
+            <div class="title">
+                <h1>Registro crear usuario</h1>
+            </div>
+            <div class="col-md-12">
+                <div class="form-control">
+                    <div class="mb-3">
+                        <label for="text"><strong>Nombres</strong></label>
+                        <input class="form-control" type="text" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="text"><strong>Apellidos</strong></label>
+                        <input class="form-control" type="text" placeholder="Apellidos">
+                    </div>
+                    <div class="mb-3">
+                        <label for="text"><strong>Correo</strong></label>
+                        <input class="form-control" type="text" placeholder="Correo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="text"><strong>Género</strong></label>
+                        <input class="form-control" type="text" placeholder="Género">
+                    </div>
+                    <div class="mb-3">
+                        <label for="text"><strong>Edad</strong></label>
+                        <input class="form-control" type="text" placeholder="Edad">
+                    </div>
+
+                    <button class="btnCrearUsuario btn"><a asp-controller="Usuarios" asp-action="Info">Actualizar
+                            Información</a></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
